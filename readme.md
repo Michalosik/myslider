@@ -46,7 +46,7 @@ Change this option if you want to items changes automatically.
 
 ![Autochange](https://koficode.pl/img/ezgif.com-gif-maker-1.gif)
 ```
-let autoChange = false;
+let autoChange = true;
 ```
 You can set the change time in miliseconds by changing value of sliderSpeed variable.
 ```
@@ -56,7 +56,7 @@ let sliderSpeed = 2000;
 If you want to set up basic arrow control, change this variable to true.
 ![Arrows](/assets/img/1.png)
 ```
-let arrowControls = false;
+let arrowControls = true;
 ```
 ## License
 *ISC
