@@ -1,13 +1,13 @@
 # MySlider
 
 ## Table of content
-- ** [Descrtiption](#descritpion)
+- [Descrtiption](#descritpion)
 
-- ** [How to install](#how-to-install)
+- [How to install](#how-to-install)
 
-- ** [How to use](#how-to-use)
+- [How to use](#how-to-use)
 
-- ** [License](#license)
+- [License](#license)
 
 ## Description
 
