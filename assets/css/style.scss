@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #222;
+}
+
+.sr-only {
+	visibility: hidden;
+	font-size: 0;
+}
+
+.slider {
+	position: relative;
+	max-height: 50%;
+	max-width: 80%;
+	overflow: hidden;
+
+	&__box {
+		display: flex;
+		transform: translateX(0);
+		/*\/here you can change speed of change animation*/
+		transition: transform 0.9s;
+
+		&-item {
+			height: auto;
+			min-width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__controls-btn {
+		position: absolute;
+		top: 50%;
+		padding: 1rem 1.5rem;
+		background: none;
+		border: none;
+		font-size: 4rem;
+		color: hsl(175, 100%, 59%);
+		transform: translateY(-50%);
+		cursor: pointer;
+
+		&--left {
+			left: 0;
+		}
+
+		&--right {
+			right: 0;
+		}
+	}
+}

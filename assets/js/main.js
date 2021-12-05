@@ -1,8 +1,8 @@
 // Controls
 let sliderON = true;
 let draggable = false;
-let autoChange = true;
-let arrowControls = false;
+let autoChange = false;
+let arrowControls = true;
 let sliderSpeed = 2000;
 
 

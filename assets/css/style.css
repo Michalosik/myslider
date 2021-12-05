@@ -8,45 +8,44 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 	height: 100vh;
-	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
+	background-color: #222;
 }
 
 .sr-only {
 	visibility: hidden;
+	font-size: 0;
 }
 
 .slider {
 	position: relative;
-	height: auto;
-	max-width: 100%;
-	border-radius: 6px;
+	max-height: 50%;
+	max-width: 80%;
 	overflow: hidden;
 }
 
 .slider__box {
 	display: flex;
 	transform: translateX(0);
-	transition: transform 0.5s;
+	/*\/here you can change speed of change animation*/
+	transition: transform 0.9s;
 }
 
 .slider__box-item {
-	min-width: 100%;
 	height: auto;
+	min-width: 100%;
 	object-fit: cover;
 }
 
 .slider__controls-btn {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
-	padding: 0.5em 0.8em;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.4);
-	font-size: 2rem;
+	padding: 1rem 1.5rem;
+	background: none;
 	border: none;
+	font-size: 4rem;
+	color: hsl(175, 100%, 59%);
+	transform: translateY(-50%);
 	cursor: pointer;
 }
 
@@ -56,13 +55,4 @@ body {
 
 .slider__controls-btn--right {
 	right: 0;
-}
-
-.slider__controls-btn span {
-	display: block;
-	transition: transform 0.3s;
-}
-
-.slider__controls-btn:hover span {
-	transform: scale(0.7);
 }
