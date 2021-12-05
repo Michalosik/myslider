@@ -1,0 +1,15 @@
+{
+    "name": "my-slider",
+    "version": "1.0.0",
+    "description": "MySlider is simple responsive slider with few features like drag image change, arrows control or autochange",
+    "main": "assets/js/main.js",
+    "author": "Michał Baliński",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Michalosik/myslider.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@michalosik"
+    }
+}
