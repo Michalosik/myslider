@@ -42,7 +42,8 @@ By changing this option to true you enable the possibility of changing slider it
 let draggable = true;
 ```
 #### Auto change of items
-Change this option if you want to items changes automatically. 
+Change this option if you want to items changes automatically.
+
 ![Autochange](https://koficode.pl/img/ezgif.com-gif-maker-1.gif)
 ```
 let autoChange = false;
