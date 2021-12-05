@@ -2,8 +2,11 @@
 
 ## Table of content
 *[Descrtiption](#descritpion)
+
 *[How to install](#how-to-install)
+
 *[How to use](#how-to-use)
+
 *[License](#license)
 
 ## Description
@@ -12,7 +15,7 @@ MySlider is very simple responsive slider based on VanilaJS, CSS and HTML. Slide
 
 ## How to install 
 
-Copy the main.js file to your js, copy css style (or scss) to your css style, and paste into your HTML Code this:
+Copy the main.js file to your js, copy css style (or scss) to your css style, and paste into your HTML Code this (feel free to add as many items as you want to):
 ```
 <div class="slider">
         <div class="slider__box">
