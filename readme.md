@@ -1,13 +1,13 @@
 # MySlider
 
 ## Table of content
-*[Descrtiption](#descritpion)
+- ** [Descrtiption](#descritpion)
 
-*[How to install](#how-to-install)
+- ** [How to install](#how-to-install)
 
-*[How to use](#how-to-use)
+- ** [How to use](#how-to-use)
 
-*[License](#license)
+- ** [License](#license)
 
 ## Description
 
@@ -59,5 +59,6 @@ If you want to set up basic arrow control, change this variable to true.
 let arrowControls = true;
 ```
 ## License
-*ISC
-*All graphics come frome unsplash random source!
+- ISC
+
+- All graphics come frome unsplash random source!
