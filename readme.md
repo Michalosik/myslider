@@ -61,4 +61,4 @@ let arrowControls = true;
 ## License
 - ISC
 
-- All graphics come frome unsplash random source!
+- All graphics come from unsplash random source!
