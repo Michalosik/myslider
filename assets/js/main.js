@@ -1,6 +1,6 @@
 // Controls
 let sliderON = true;
-let draggable = false;
+let draggable = true;
 let autoChange = false;
 let arrowControls = true;
 let sliderSpeed = 2000;
@@ -45,28 +45,21 @@ if (sliderON) {
 		let position;
 		let difference;
 
-		//set X axis position
-
-		slider.addEventListener('mousedown', (e) => {
+		//set X axio position
+		const dragItem = (e) => {
 			drag = true;
-			e.preventDefault();
-			startPosition = e.offsetX;
-		})
+			startPosition = e.clientX;
+		}
 
-		//register mouse move
-
-		slider.addEventListener('mousemove', (e) => {
+		const moveItem = (e) => {
 			if (drag) {
-				e.preventDefault();
-				position = e.offsetX;
+				position = e.clientX;
 				difference = position - startPosition;
-				box.style.transform = `translateX(${transformValue + (difference/2)}px)`
+				box.style.transform = `translateX(${transformValue + (difference)}px)`
 			}
-		})
+		}
 
-		//register mouse release 
-
-		window.addEventListener('mouseup', () => {
+		const releaseItem = () => {
 			drag = false;
 			if (difference < 200) {
 				i++;
@@ -75,8 +68,31 @@ if (sliderON) {
 				i--;
 				changeImg();
 			}
+
+		}
+		slider.addEventListener('mousedown', (e) => {
+			e.preventDefault();
+			dragItem(e);
 		})
 
+		//register mouse move
+
+		slider.addEventListener('mousemove', (e) => {
+			if (drag) {
+				e.preventDefault();
+				moveItem(e);
+			}
+		})
+		slider.addEventListener('touchmove', (e) => {
+			if (drag) {
+				moveItem(e);
+			}
+		})
+
+		//register mouse release 
+
+		window.addEventListener('mouseup', releaseItem)
+		window.addEventListener('touchend', releaseItem)
 	}
 	//Autochange
 
