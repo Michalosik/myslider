@@ -37,14 +37,13 @@ let sliderON = true;
 ```
 #### Draggable option
 By changing this option to true you enable the possibility of changing slider items by draging it.
-![Draggable](https://koficode.pl/img/ezgif.com-gif-maker-2.gif)
+
 ```
 let draggable = true;
 ```
 #### Auto change of items
 Change this option if you want to items changes automatically.
 
-![Autochange](https://koficode.pl/img/ezgif.com-gif-maker-1.gif)
 ```
 let autoChange = true;
 ```
