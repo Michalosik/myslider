@@ -1,7 +1,7 @@
 # MySlider
 
 ## Table of content
-- [Descrtiption](#descritpion)
+- [Description](#description)
 
 - [How to install](#how-to-install)
 
